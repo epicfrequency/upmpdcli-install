@@ -1,0 +1,13 @@
+sudo cd /root
+sudo wget https://www.lesbonscomptes.com/pages/jf-at-dockes.org.pgp
+
+sudo gpg --import *.pgp
+
+sudo gpg --export '7808CE96D38B9201' | sudo apt-key add -
+
+
+sudo printf "deb http://www.lesbonscomptes.com/upmpdcli/downloads/raspbian/ bus$
+
+sudo apt-get update
+
+sudo apt-get install -y upmpdcli upmpdcli-tidal
