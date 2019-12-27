@@ -1,0 +1,2 @@
+wget https://github.com/khadas/android_hardware_amlogic_wifi/raw/b6709758755568e4a0ff6e80993be0fc64c77fb9/bcm_ampak/config/6255/nvram.txt
+sudo cp nvram.txt /lib/firmware/brcm/brcmfmac43455-sdio.txt
